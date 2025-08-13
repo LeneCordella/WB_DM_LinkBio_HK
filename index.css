@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 74px;
+  text-shadow: 3px 6px 1px #000000;
+}
+
+.banner h1::before {
+  content: "";
+  height: 5px;
+  width: 55px;
+  background: linear-gradient(90deg, rgb(135, 6, 75), rgb(246, 7, 7));
+  bottom: 2px;
+  left: 5px;
+  border-radius: 4px;
+}
+
+.banner h1::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: -20px;
+  background-image: url("assets/img/verificado.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.banner video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.container-img {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img::before {
+  content: "";
+  position: absolute;
+  height: 215px;
+  width: 215px;
+  border-radius: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgb(135, 6, 75), rgb(246, 7, 7));
+}
+
+.container-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+  gap: 1px;
+}
+
+li {
+  background-color: rgba(54, 52, 52);
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 5px 0px;
+  width: 300px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  background-color: #fff;
+}
+
+li a:hover {
+  color: black;
+}
+
+li img {
+  height: 20px;
+  width: 20px;
+}
+
+.discography h2 {
+  color: white;
+  font-size: 74px;
+  text-shadow: 3px 6px 1px #000000;
+}
