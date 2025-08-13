@@ -25,7 +25,7 @@ body {
   text-shadow: 3px 6px 1px #000000;
 }
 
-.banner h1::before {
+.banner::before {
   content: "";
   height: 5px;
   width: 55px;
@@ -116,11 +116,66 @@ li img {
 }
 
 .discography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Monstserrat", sans-serif;
+  background-color: gray;
 }
 
 .discography h2 {
   color: white;
   font-size: 74px;
   text-shadow: 3px 6px 1px #000000;
+}
+
+.tabela a {
+  text-decoration: none;
+  color: #000;
+}
+
+.tabela th {
+  font-size: 26px;
+  background-color: #000000cc;
+  color: #ffff;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela th,
+tr,
+td {
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tabela td img {
+  width: 30px;
+}
+
+.tabela tbody td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+  background-color: #b18686cc;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+  background-color: #680000cc;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid gray;
 }
