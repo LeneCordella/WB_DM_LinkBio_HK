@@ -130,6 +130,18 @@ li img {
   text-shadow: 3px 6px 1px #000000;
 }
 
+.discography p {
+  text-align: center;
+}
+
+table,
+th,
+td,
+tr {
+  border: 1px solid gray;
+  text-align: center;
+}
+
 .tabela a {
   text-decoration: none;
   color: #000;
@@ -142,16 +154,16 @@ li img {
   text-shadow: 2px 2px 1px #000000;
 }
 
-.tabela th,
+th,
 tr,
 td {
   width: auto;
   padding: 20px;
-  text-align: center;
 }
 
-.tabela td img {
+td img {
   width: 30px;
+  height: 30px;
 }
 
 .tabela tbody td:nth-child(1) {
@@ -172,10 +184,4 @@ td {
   font-weight: 700;
   font-size: 18px;
   color: #fff;
-}
-
-table,
-th,
-td {
-  border: 1px solid gray;
 }
