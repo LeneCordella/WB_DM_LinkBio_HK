@@ -97,7 +97,12 @@ li {
   width: 300px;
 }
 
-li a {
+div a {
+  text-decoration: none;
+  color: black;
+}
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -134,17 +139,16 @@ li img {
   text-align: center;
 }
 
-table,
-th,
-td,
-tr {
+table {
   border: 1px solid gray;
-  text-align: center;
 }
 
-.tabela a {
-  text-decoration: none;
-  color: #000;
+th,
+tr,
+td {
+  text-align: center;
+  width: auto;
+  padding: 20px;
 }
 
 .tabela th {
@@ -154,11 +158,9 @@ tr {
   text-shadow: 2px 2px 1px #000000;
 }
 
-th,
-tr,
-td {
-  width: auto;
-  padding: 20px;
+.tabela-imagem {
+  width: 30px;
+  height: 30px;
 }
 
 td img {
@@ -176,7 +178,6 @@ td img {
   background-color: #b18686cc;
   font-weight: 700;
   font-size: 18px;
-  color: #000000;
 }
 
 .tabela tbody tr:nth-of-type(even) {
