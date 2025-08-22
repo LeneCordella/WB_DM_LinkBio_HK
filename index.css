@@ -9,14 +9,14 @@ body {
   background-color: black;
 }
 
+/*ANALISAR CONTAINER "BANNER" DO PROJETO ORIGINAL (EM ABSOLUTE)*/
 .banner {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  overflow: auto;
+  gap: 40px;
 }
 
 .banner h1 {
@@ -47,8 +47,8 @@ body {
 }
 
 .banner video {
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -76,6 +76,7 @@ body {
 }
 
 .container-img img {
+  display: flex;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -127,6 +128,12 @@ li img {
   justify-content: center;
   font-family: "Monstserrat", sans-serif;
   background-color: gray;
+  background-image: url("assets/img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .discography h2 {
@@ -139,7 +146,7 @@ li img {
   text-align: center;
 }
 
-table {
+.tabela {
   border: 1px solid gray;
 }
 
