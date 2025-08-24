@@ -22,16 +22,16 @@ body {
 .banner h1 {
   color: white;
   font-size: 50px;
-  text-shadow: 3px 6px 1px #000000;
+  text-shadow: 3px 6px 1px #333131;
 }
 
-.banner::before {
+h1::before {
   content: "";
+  position: absolute;
   height: 5px;
-  width: 55px;
+  width: 46px;
   background: linear-gradient(90deg, rgb(135, 6, 75), rgb(246, 7, 7));
-  bottom: 2px;
-  left: 5px;
+  top: 11vh;
   border-radius: 4px;
 }
 
